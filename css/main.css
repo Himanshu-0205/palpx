@@ -1,0 +1,257 @@
+html {
+	padding:20px;
+}
+
+body {
+	border: 1px solid #ccc;
+	font-family: 'open-sans';
+}
+
+/* Navigation css starts from here */
+#header {
+	border-bottom: 1px solid #cccccc;
+}
+
+#header .nav-link {
+	color: #000000;
+}
+
+#header .navbar-brand span {
+	color: #000000;
+	font-style: italic;
+	font-weight: bolder;
+	font-size: 22px;
+}
+/* Navigation css ends from here */
+
+#first .heading {
+	font-size: 4.5rem;
+	padding-top: 40px;
+}
+
+#first .text {
+	width: 62%;
+    margin: 0px auto;
+}
+
+#first {
+	border-bottom:1px solid #ccc;
+}
+
+#second {
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+#second figcaption {
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.float-content > * {
+    float:left;
+    margin-right:15px;
+}
+
+#third {
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+#third p {
+	width: 50%;
+    margin-top: 10px;
+    line-height: 27px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+#third .wid-100 {
+	width: 100%;
+}
+
+.read-more {
+	background: #a9a9a9;
+	color: #fff;
+	padding: 5px 10px;
+	float: left;
+	margin-top: 15px;
+}
+
+/* Video css starts from here */
+.video-wrapper {
+    position: relative;
+}
+
+.video-wrapper > video {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.video-wrapper > video.has-media-controls-hidden::-webkit-media-controls {
+    display: none;
+}
+
+.video-overlay-play-button {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 10px calc(50% - 50px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    opacity: 0.95;
+    cursor: pointer;
+    background-image: linear-gradient(transparent, #000);
+    transition: opacity 150ms;
+}
+
+.video-overlay-play-button:hover {
+    opacity: 1;
+}
+
+.video-overlay-play-button.is-hidden {
+    display: none;
+}
+
+article {
+   position: relative;
+   width: 100%;
+   height: 350px;
+   justify-content: center;
+   align-items: center;
+}
+   
+svg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+ 
+line {
+  stroke: #cccccc;
+  stroke-width: 1;
+}
+/* Video css ends from here */
+
+/* Footer css starts from here */
+footer {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+footer ul {
+	padding: 0;
+}
+   
+footer li {
+	display:inline-block
+}
+
+footer li:before {
+	content:'|'
+}
+
+footer li:first-child:before {
+	content: none;
+}
+/* Footer css ends from here */
+
+/* Media queries start from here */
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  
+	#first .heading {
+		font-size: 2rem;
+	}
+
+	.read-more {
+		margin-bottom: 15px;
+	}
+
+	.mt20 {
+		margin-top: 0;
+	}
+
+	#third p {
+    	margin-left: 10px;
+    	margin-top: 0;
+ 	}
+
+ 	.float-content > * {
+    	margin: 0px 0 0;
+		margin-bottom: 10px;
+	}
+
+	#third strong {
+		margin-left: 10px;
+	}
+
+	#recommend-block {
+		border-bottom: 1px solid #ccc;
+	}
+
+	#recommend-block h1 {
+		font-size: 20px;
+		padding-top: 40px;
+		padding-left: 13px;
+	}
+
+	#recommend-block p {
+		padding-left: 13px;
+	} 
+
+	#recommend-block .read-more {
+		margin-left: 13px;	
+	}
+}
+
+@media (max-width: 320px) {
+	#first .heading {
+		font-size: 1.5rem;
+	}
+
+	.read-more {
+		margin-bottom: 15px;
+	}
+
+ 	.float-content > * {
+		margin-bottom: 10px;
+	}
+
+	footer {
+		margin-bottom: 40px;
+	}
+
+	#header .navbar-light .navbar-toggler {
+		padding: 6px;
+	}
+
+	#header .navbar-toggler-icon {
+		width:1em;
+		height: 1em;
+	}
+
+	#recommend-block {
+		border-bottom: 1px solid #ccc;
+	}
+
+	#recommend-block h1 {
+		font-size: 20px;
+		padding-top: 40px;
+		padding-left: 13px;
+	}
+
+	#recommend-block p {
+		padding-left: 13px;
+	} 
+
+	#recommend-block .read-more {
+		margin-left: 13px;	
+	}
+	
+}
+/* Media queries ends from here */
